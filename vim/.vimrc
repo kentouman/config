@@ -52,6 +52,8 @@ set t_Co=256
 syntax on
 set background=dark
 colorscheme solarized
+"colorscheme molokai
+"colorscheme lucius
 let g:solarized_termcolors=256
 
 " Also switch on highlighting the last used search pattern.
