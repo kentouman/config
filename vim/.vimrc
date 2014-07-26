@@ -47,10 +47,12 @@ if has('mouse')
   set mouse=a
 endif
 
-" Switch syntax highlighting on, when the terminal has colors
-set t_Co=256
-:colorscheme lucius
+" Switch syntax highlighting on, when the terminal has colors" 
+"set t_Co=256
 syntax on
+set background=dark
+colorscheme solarized
+let g:solarized_termcolors=256
 
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")
