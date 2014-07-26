@@ -48,7 +48,7 @@ if has('mouse')
 endif
 
 " Switch syntax highlighting on, when the terminal has colors" 
-"set t_Co=256
+set t_Co=256
 syntax on
 set background=dark
 colorscheme solarized
