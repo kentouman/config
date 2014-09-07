@@ -52,9 +52,9 @@ set t_Co=256
 syntax on
 set background=dark
 colorscheme solarized
+let g:solarized_termcolors=256
 "colorscheme molokai
 "colorscheme lucius
-let g:solarized_termcolors=256
 
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")
@@ -110,3 +110,5 @@ set sw=4
 set ts=4
 set nobackup
 set expandtab
+
+:imap jj <Esc>
