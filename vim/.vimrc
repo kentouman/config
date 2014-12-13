@@ -18,8 +18,23 @@ endif
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+filetype off
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'AutoClose'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
+
 
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
@@ -46,7 +61,15 @@ if has('mouse')
   set mouse=a
 endif
 
-" Switch syntax highlighting on, when the terminal has colors
+" Switch syntax highlighting on, when the terminal has colors" 
+set t_Co=256
+syntax on
+set background=dark
+colorscheme solarized
+let g:solarized_termcolors=256
+"colorscheme molokai
+"colorscheme lucius
+
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")
   syntax on
@@ -94,3 +117,12 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
 		  \ | wincmd p | diffthis
 endif
+
+"set nu
+set cin
+set sw=4
+set ts=4
+set nobackup
+set expandtab
+
+:imap jj <Esc>
