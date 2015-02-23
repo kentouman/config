@@ -83,12 +83,11 @@ source $ZSH/oh-my-zsh.sh
 source /etc/bash_completion.d/g4d
 
 # source work alias if alias file exists
-if test -e ".workalias";
-then
-  source .workalias
+if [ -f ~/.work_aliases ]; then
+    . ~/.work_aliases
 fi
 
-if test -e ".zhfalias";
-then
-  source .zhfalias
+if [ -f ~/.zhf_aliases ]; then
+    . ~/.zhf_aliases
 fi
+
