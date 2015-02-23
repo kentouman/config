@@ -1,4 +1,5 @@
 # alias for general
+alias l='ls -lF'
 alias ll='ls -alF'
 
 # alias for tool
