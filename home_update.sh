@@ -2,5 +2,5 @@
 
 cp -r ./vim/.vim ~
 cp ./vim/.vimrc ~
-# cp ./zsh/.zshrc.work ~/.zshrc
+cp ./zsh/.zshrc_home ~/.zshrc
 cp ./zsh/.zhf_aliases ~
