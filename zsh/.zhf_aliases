@@ -6,11 +6,11 @@ alias ll='ls -alF'
 alias tmux='tmux -2'
 
 # alias for git
-alias gpl='git pull'
+alias gp='git pull'
 alias gps='git push origin master'
 alias gd='git diff'
 alias gs='git status'
-alias gc='git checkout'
+alias go='git checkout'
 alias ga='git add'
-alias gm='git commit -m'
+alias gc='git commit -m'
 
