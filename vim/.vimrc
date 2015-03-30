@@ -118,7 +118,7 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
-"set nu
+set nu
 set cin
 set sw=4
 set ts=4
@@ -126,3 +126,4 @@ set nobackup
 set expandtab
 
 :imap jj <Esc>
+set pastetoggle=<F2>

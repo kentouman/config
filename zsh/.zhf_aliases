@@ -5,12 +5,3 @@ alias ll='ls -alF'
 # alias for tool
 alias tmux='tmux -2'
 
-# alias for git
-alias gp='git pull'
-alias gps='git push origin master'
-alias gd='git diff'
-alias gs='git status'
-alias go='git checkout'
-alias ga='git add'
-alias gc='git commit -m'
-
